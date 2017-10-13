@@ -1,0 +1,11 @@
+version: '2'
+services:
+    moor_freadmintour-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/moor_freadmintour/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=moor_freadmintour
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
